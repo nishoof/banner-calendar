@@ -7,8 +7,17 @@
   </head>
   <body>
     <div id="app">
-      <h1>Counter</h1>
-      <button id="counter" type="button" class="counter"></button>
+      <h1>Banner course schedule → calendar</h1>
+      <p>Paste your Banner class schedule, then download an .ics file.</p>
+      <textarea
+        id="schedule-input"
+        rows="20"
+        placeholder="Paste schedule text here"
+      ></textarea>
+      <div class="actions">
+        <button id="download" type="button">Download .ics</button>
+      </div>
+      <p id="status" aria-live="polite"></p>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
