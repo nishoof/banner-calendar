@@ -36,7 +36,7 @@ textarea {
 }
 
 .actions {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 button {
@@ -46,6 +46,36 @@ button {
 }
 
 #status {
-  margin-top: 0.75rem;
-  min-height: 1.25em;
+  margin: 0;
+  min-height: 0;
+}
+
+#status:not(:empty) {
+  margin: 0.75rem 0 0;
+}
+
+#preview-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+#preview-list:not(:empty) {
+  margin-top: 1rem;
+}
+
+#preview-list li {
+  padding: 0.75rem 0;
+}
+
+#preview-list li strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #111;
+}
+
+#preview-list li div {
+  color: #444;
+  font-size: 0.9rem;
 }

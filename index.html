@@ -8,16 +8,20 @@
   <body>
     <div id="app">
       <h1>Banner course schedule → calendar</h1>
-      <p>Paste your Banner class schedule, then download an .ics file.</p>
+      <p>
+        Paste your Banner class schedule, download an .ics file, then import the
+        .ics file into your calendar.
+      </p>
       <textarea
         id="schedule-input"
         rows="20"
         placeholder="Paste schedule text here"
       ></textarea>
-      <div class="actions">
-        <button id="download" type="button">Download .ics</button>
-      </div>
       <p id="status" aria-live="polite"></p>
+      <ul id="preview-list"></ul>
+      <div class="actions">
+        <button id="download" type="button">Download calendar (.ics)</button>
+      </div>
     </div>
     <script type="module" src="/src/ui/main.ts"></script>
   </body>
