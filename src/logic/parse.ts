@@ -1,16 +1,4 @@
-export type Course = {
-    title: string;
-    subject: string;
-    section: string;
-    startDate: string;
-    endDate: string;
-    days: string[];
-    startTime: string;
-    endTime: string;
-    building: string;
-    room: string;
-    instructor: string;
-};
+import type { Course } from "./course";
 
 export function parseSchedule(text: string): Course[] {
     const courses: Course[] = [];

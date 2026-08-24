@@ -1,6 +1,6 @@
 import "./style.css";
-import { parseSchedule } from "./parseSchedule";
-import { coursesToIcs } from "./coursesToIcs";
+import { parseSchedule } from "../logic/parse";
+import { coursesToIcs } from "../logic/ics";
 
 const input = document.querySelector<HTMLTextAreaElement>("#schedule-input")!;
 const downloadButton = document.querySelector<HTMLButtonElement>("#download")!;

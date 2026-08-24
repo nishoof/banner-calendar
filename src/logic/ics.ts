@@ -1,4 +1,4 @@
-import type { Course } from "./parseSchedule";
+import type { Course } from "./course";
 
 const WEEKDAY_TO_BYDAY: Record<string, string> = {
     Sunday: "SU",
