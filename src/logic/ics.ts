@@ -28,7 +28,7 @@ export function coursesToIcs(courses: Course[]): string {
     const lines: string[] = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//Nishil Anand//course-schedule//EN",
+        "PRODID:-//Nishil Anand//banner-calendar//EN",
         "CALSCALE:GREGORIAN", // TODO: this is optional, so we can remove. check for other optional fields that we don't need
         "METHOD:PUBLISH",
     ];
@@ -66,7 +66,7 @@ function courseToEventLines(course: Course, dtstamp: string): string[] {
     const uid = escapeIcsText(
         [course.title, course.section, course.startDate, course.startTime].join(
             "-",
-        ) + "@course-schedule",
+        ) + "@banner-calendar",
     ); // TODO: should this be a UUID?
 
     return [
